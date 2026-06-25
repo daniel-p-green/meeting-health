@@ -1,0 +1,22 @@
+.DS_Store
+
+# Local analysis outputs
+outputs/
+work/
+*.csv
+*.json
+*.jsonl
+*.sqlite
+*.db
+
+# Python/node scratch if scripts are added later
+.venv/
+node_modules/
+__pycache__/
+
+# Environment and secrets
+.env
+.env.*
+*.pem
+*.key
+
