@@ -28,3 +28,4 @@ Before considering changes done:
 - Confirm `README.md` explains install, use, requirements, privacy, and caveats.
 - Confirm `.agents/skills/meeting-health/SKILL.md` has valid YAML front matter with `name` and `description`.
 - Confirm no raw data or secrets are present.
+- Run `scripts/check.sh` when the validation script is present.

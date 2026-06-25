@@ -1,0 +1,7 @@
+event_id,title,start,end,organizer,attendees,response_status,transparency,recurring_event_id,category
+evt_001,Presentation rehearsal,2026-01-12T09:00:00-06:00,2026-01-12T09:30:00-06:00,Contact A,"Contact B;Contact C",accepted,opaque,,presentation
+evt_002,Partnership sync,2026-01-12T13:00:00-06:00,2026-01-12T13:30:00-06:00,Contact D,"Contact E;Contact F",accepted,opaque,series_001,external_sync
+evt_003,Project 1:1,2026-01-13T15:00:00-06:00,2026-01-13T15:25:00-06:00,Contact G,Contact H,accepted,opaque,series_002,one_on_one
+evt_004,Focus block,2026-01-13T10:00:00-06:00,2026-01-13T11:00:00-06:00,Self,,accepted,transparent,,excluded_hold
+evt_005,Team review,2026-01-14T11:00:00-06:00,2026-01-14T12:00:00-06:00,Contact I,"Contact J;Contact K;Contact L",accepted,opaque,series_003,team_meeting
+

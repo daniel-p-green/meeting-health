@@ -8,6 +8,7 @@ work/
 *.jsonl
 *.sqlite
 *.db
+!fixtures/*.csv
 
 # Python/node scratch if scripts are added later
 .venv/
@@ -19,4 +20,3 @@ __pycache__/
 .env.*
 *.pem
 *.key
-
