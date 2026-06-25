@@ -26,6 +26,5 @@ This repo packages a public, privacy-safe Codex skill for analyzing Apple Health
 Before considering changes done:
 
 - Confirm `README.md` explains install, use, requirements, privacy, and caveats.
-- Confirm `.agents/skills/meeting-fitness/SKILL.md` has valid YAML front matter with `name` and `description`.
+- Confirm `.agents/skills/meeting-health/SKILL.md` has valid YAML front matter with `name` and `description`.
 - Confirm no raw data or secrets are present.
-

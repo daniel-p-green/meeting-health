@@ -1,8 +1,8 @@
-# Meeting Fitness Skill
+# Meeting Health
 
 A Codex skill for analyzing how calendar events line up with Apple Health heart-rate data.
 
-This repo packages a repeatable workflow for a private "meeting fitness" report: join timestamped calendar events with Apple Health `heartRate` samples, compare each meeting against a nearby baseline, and summarize which meetings appear activating, calming, or variable.
+This repo packages a repeatable workflow for a private meeting health report: join timestamped calendar events with Apple Health `heartRate` samples, compare each meeting against a nearby baseline, and summarize which meetings appear activating, calming, or variable.
 
 The idea is inspired by Eric Porres's post, ["Your Calendar Has a Heart Rate"](https://promptedbyeric.substack.com/p/your-calendar-has-a-heart-rate), which describes using wearable data and calendar data to test whether meetings leave a measurable physiological trace.
 
@@ -36,7 +36,7 @@ Codex can discover repo-scoped skills from `.agents/skills` inside a repository.
 Clone the repo, open it in Codex, then mention the skill:
 
 ```text
-$meeting-fitness
+$meeting-health
 Analyze my last 14 days of meetings against Apple Health heart rate.
 ```
 
@@ -44,7 +44,7 @@ You can also copy the skill folder into your user skills directory:
 
 ```bash
 mkdir -p "$HOME/.agents/skills"
-cp -R .agents/skills/meeting-fitness "$HOME/.agents/skills/"
+cp -R .agents/skills/meeting-health "$HOME/.agents/skills/"
 ```
 
 Restart Codex if the skill does not appear immediately.
@@ -65,15 +65,15 @@ For Apple Watch users, the key HealthKit metric is `heartRate`. Helpful supporti
 Start with a narrow feasibility check:
 
 ```text
-$meeting-fitness
-Check whether my Apple Health heart-rate data and calendar events are sufficient for a 14-day meeting fitness report. Do not generate the full report yet.
+$meeting-health
+Check whether my Apple Health heart-rate data and calendar events are sufficient for a 14-day meeting health report. Do not generate the full report yet.
 ```
 
 If coverage looks good, run:
 
 ```text
-$meeting-fitness
-Create a private meeting fitness report for the last 14 days. Use a 30-minute pre-meeting baseline, exclude overlapping calendar time from the baseline when possible, and anonymize attendee names in the final report.
+$meeting-health
+Create a private meeting health report for the last 14 days. Use a 30-minute pre-meeting baseline, exclude overlapping calendar time from the baseline when possible, and anonymize attendee names in the final report.
 ```
 
 ## Method
@@ -109,7 +109,7 @@ Use this as a personal reflection and calendar-design tool. Do not use it to ran
 ## Repo Layout
 
 ```text
-.agents/skills/meeting-fitness/SKILL.md  # The Codex skill
+.agents/skills/meeting-health/SKILL.md   # The Codex skill
 README.md                                # Public repo guide
 AGENTS.md                                # Contributor instructions
 LICENSE                                  # MIT license

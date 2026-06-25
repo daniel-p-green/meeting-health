@@ -1,11 +1,11 @@
 ---
-name: meeting-fitness
-description: Use when the user wants to analyze meetings, calendar events, collaborators, or workday schedule patterns against Apple Health heart-rate data. Trigger for phrases like "meeting fitness", "calendar heart rate", "meeting stress load", "which meetings raise my heart rate", or "analyze my calendar with Apple Health".
+name: meeting-health
+description: Use when the user wants to analyze meetings, calendar events, collaborators, or workday schedule patterns against Apple Health heart-rate data. Trigger for phrases like "meeting health", "meeting fitness", "calendar heart rate", "meeting stress load", "which meetings raise my heart rate", or "analyze my calendar with Apple Health".
 ---
 
-# Meeting Fitness
+# Meeting Health
 
-Analyze calendar events against Apple Health heart-rate data and produce a private, caveated meeting fitness report.
+Analyze calendar events against Apple Health heart-rate data and produce a private, caveated meeting health report.
 
 ## Scope
 
@@ -73,7 +73,7 @@ Produce a concise Markdown report unless the user asks for another format.
 Use this structure:
 
 ```md
-# Meeting Fitness Report
+# Meeting Health Report
 
 ## Executive Summary
 
@@ -118,17 +118,16 @@ A successful run should clearly state:
 ## Suggested Prompts
 
 ```text
-$meeting-fitness
-Check if my Apple Health heart-rate data is dense enough for a meeting fitness report over the last 14 days.
+$meeting-health
+Check if my Apple Health heart-rate data is dense enough for a meeting health report over the last 14 days.
 ```
 
 ```text
-$meeting-fitness
-Create a private meeting fitness report for the last 30 days. Use a 30-minute pre-meeting baseline and anonymize attendees.
+$meeting-health
+Create a private meeting health report for the last 30 days. Use a 30-minute pre-meeting baseline and anonymize attendees.
 ```
 
 ```text
-$meeting-fitness
+$meeting-health
 Find recurring meetings that appear consistently activating or calming. Keep the output local and privacy-safe.
 ```
-
